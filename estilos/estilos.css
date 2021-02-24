@@ -1,0 +1,13 @@
+*{
+    font-size: 20px;
+    color: blue;
+}
+
+.input_text{
+    size: 12px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 8px;
+    color: #009900;
+    letter-spacing: 3px;
+}

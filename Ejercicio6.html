@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/ejercicio6.js"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <form name="formulario">
+        Problema:
+        Un vendedor recibe un sueldo base mas un 10% extra por comision de ventas, el vendedor
+        desea saber cuanto dinero obtendra por el concepto de comisiones por las tres ventas
+        que realiza en un mes y el total que recibira en el mes tomando en cuenta su sueldo base y comisiones
+        <br>
+        <table align="center" border="0">
+            <tr>
+                <td align="center" width="100">Ingrese su sueldo</td>
+                <td align="center" width="150">
+                    <input type="text" name="sueldo" onkeypress="return validarventas(event)">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="100">Ingrese la venta 1</td>
+                <td align="center" width="150">
+                    <input type="text" name="venta1" onkeypress="return validarventas(event)">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="100">Ingrese la venta 2</td>
+                <td align="center" width="150">
+                    <input type="text" name="venta2" onkeypress="return validarventas(event)">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="100">Ingrese la venta 3</td>
+                <td align="center" width="150">
+                    <input type="text" name="venta3" onkeypress="return validarventas(event)">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="Comision" name="enviar" onclick="comision()">
+                </td>
+            </tr>
+           
+            <tr>
+                <td>El sueldo mas comision es de </td>
+                <td align="center" width="150">
+                    <input type="text" name="sueldoc"  readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

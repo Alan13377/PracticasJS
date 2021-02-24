@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/ejercicio1.js"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <form name="formulario">
+        Problema:
+        Suponga que un individuo desea invertir su capital en un
+        banco y desea saber cuanto dinero ganara despues de un mes si el
+        banco paga a razon de 2% mensual
+        <br>
+        <table align="center" border="0">
+            <tr>
+                <td align="center" width="100">Introduce la cantidad a invertir</td>
+                <td align="center" width="150">
+                    <input type="text" name="cantidad" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="Interes" name="enviar" onclick="interes()">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Su saldo toal con interes al 2% es de:</td>
+                <td align="center" width="150">
+                    <input type="text" name="sueldoti" readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

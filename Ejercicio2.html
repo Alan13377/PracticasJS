@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/ejercicio2.js"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <form name="formulario">
+        Problema:
+        Una tienda ofrece un 15% de descuento sobre el total de la compra y un cliente desea saber cuanto
+        debe pagar finalmente por su compra
+        <br>
+        <table align="center" border="0">
+            <tr>
+                <td align="center" width="100">Introduce el total a pagar</td>
+                <td align="center" width="150">
+                    <input type="text" name="cantidad" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="Descuento" name="enviar" onclick="descuento()">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Su saldo toal con interes al 2% es de:</td>
+                <td align="center" width="150">
+                    <input type="text" name="descuento1" id="cantidadi" readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/ejercicio4.js"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <form name="formulario">
+        Problema:
+        Un maestro desea saber el porcentaje de hombres y mujeres de un grupo de estudiantes
+        <br>
+        <table align="center" border="0">
+            <tr>
+                <td align="center" width="100">Ingrese la cantidad de hombres</td>
+                <td align="center" width="150">
+                    <input type="text" name="hombres" onkeypress="return validarnum(event)">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="100">Ingrese la cantidad de mujeres</td>
+                <td align="center" width="150">
+                    <input type="text" name="mujeres" onkeypress="return validarnum(event)">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="Porcentajes" name="enviar" onclick="porcentajes()">
+                </td>
+            </tr>
+            <tr>
+                <td>El porcentaje total de hombres es de </td>
+                <td align="center" width="150">
+                    <input type="text" name="porceho" readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td>El porcentaje total de mujeres es de </td>
+                <td align="center" width="150">
+                    <input type="text" name="porcemu"  readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

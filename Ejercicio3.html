@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/ejercicio3.js"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <form name="formulario">
+        Problema:
+        Un alumno desea saber cual sera su calificacion final en la materia de Algorimos.
+        Dicha calificacion se compone de los siguientes porcentajes:
+        55% del promedio de sus tres calificaiones parciales.
+        30% de la calificacion del examen final.
+        15% de la calificacion del trabajo final.
+        <br>
+        <table align="center" border="0">
+            <tr>
+                <td align="center" width="100">Introduce la calificacion del primer parcial</td>
+                <td align="center" width="150">
+                    <input type="text" name="num1" onkeypress="return validarn(event)">
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="center" width="100">Introduce la calificacion del segundo parcial</td>
+                <td align="center" width="150">
+                    <input type="text" name="num2" onkeypress="return validarn(event)">
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="center" width="100">Introduce la calificacion del tercer parcial</td>
+                <td align="center" width="150">
+                    <input type="text" name="num3" onkeypress="return validarn(event)">
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="center" width="100">Introduce la calificacion del examen</td>
+                <td align="center" width="150">
+                    <input type="text" name="examen" onkeypress="return validarn(event)">
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="center" width="100">Introduce la calificacion del proyecto</td>
+                <td align="center" width="150">
+                    <input type="text" name="proyecto" onkeypress="return validarn(event)">
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="Promedio" name="enviar" onclick="promedio()">
+
+                </td>
+            </tr>
+            <tr>
+                <td>El promedio es de :</td>
+                <td align="center" width="150">
+                    <input type="text" name="promedio1" readonly="readonly"
+                    class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
